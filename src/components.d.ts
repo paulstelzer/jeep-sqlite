@@ -12,6 +12,7 @@ export namespace Components {
         "addUpgradeStatement": (options: SQLiteUpgradeOptions) => Promise<void>;
         /**
           * AutoSave
+          * @default false
          */
         "autoSave": boolean;
         "beginTransaction": (options: SQLiteOptions) => Promise<SQLiteChanges>;
@@ -64,6 +65,7 @@ export namespace Components {
         "setSyncDate": (options: SQLiteSyncDateOptions) => Promise<void>;
         /**
           * in use with TypeOrm
+          * @default false
          */
         "typeOrm": boolean;
         /**
@@ -106,6 +108,7 @@ declare namespace LocalJSX {
     interface JeepSqlite {
         /**
           * AutoSave
+          * @default false
          */
         "autoSave"?: boolean;
         /**
@@ -127,6 +130,7 @@ declare namespace LocalJSX {
         "saveText"?: string;
         /**
           * in use with TypeOrm
+          * @default false
          */
         "typeOrm"?: boolean;
         /**
